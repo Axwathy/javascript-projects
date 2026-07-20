@@ -1,0 +1,100 @@
+/* ── Reset ── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Body ── */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Card container ── */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.10);
+  padding: 2rem;
+  width: 100%;
+  max-width: 460px;
+}
+
+/* ── Heading ── */
+h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2b6cb0;
+  border-bottom: 2px solid #bee3f8;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+/* ── Ticket label ── */
+.ticket-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+}
+
+/* ── Ticket badges container ── */
+.ticket-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ── Individual ticket badge ── */
+.ticket {
+  background: #ebf8ff;
+  color: #2b6cb0;
+  border: 1.5px solid #bee3f8;
+  border-radius: 8px;
+  padding: 0.35rem 0.8rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+/* ── Draw Winner Button ── */
+button {
+  width: 100%;
+  background: #2b6cb0;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.65rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #2c5282;
+}
+
+/* ── Winner display on page (Requirement 2: red colour) ── */
+#winner-display {
+  margin-top: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: red;
+  min-height: 2rem;
+  text-align: center;
+}
+
+/* ── Modal winner number ── */
+#modal-winner-number {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #c53030;
+  text-align: center;
+  padding: 0.5rem 0;
+}
