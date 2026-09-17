@@ -20,8 +20,8 @@ renderTickets();
 function drawWinner() {
   const randomIndex = Math.floor(Math.random() * lotteryTickets.length);
   const winner = lotteryTickets[randomIndex];
-  console.log("🎉 Lottery Winner Ticket Number:", winner);
-  document.getElementById("winner-display").textContent = "🏆 Winner: #" + winner;
+  console.log("Lottery Winner Ticket Number:", winner);
+  document.getElementById("winner-display").textContent = " Winner: #" + winner;
   document.getElementById("modal-winner-number").textContent = "#" + winner;
   const modal = new bootstrap.Modal(document.getElementById("winnerModal"));
   modal.show();
