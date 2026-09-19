@@ -17,6 +17,7 @@ renderTickets();
 function drawWinner() {
   const randomIndex = Math.floor(Math.random() * lotteryTickets.length);
   const winner = lotteryTickets[randomIndex];
+<<<<<<< HEAD
 
   console.log("Winner ticket:", winner);
 
@@ -28,6 +29,11 @@ function drawWinner() {
   modalWinnerNumber.textContent = "#" + winner;
   modalWinnerNumber.style.color = "red";
 
+=======
+  console.log("Lottery Winner Ticket Number:", winner);
+  document.getElementById("winner-display").textContent = " Winner: #" + winner;
+  document.getElementById("modal-winner-number").textContent = "#" + winner;
+>>>>>>> b68c3bfec6ca445191b210abf508084220d0b031
   const modal = new bootstrap.Modal(document.getElementById("winnerModal"));
   modal.show();
 }
